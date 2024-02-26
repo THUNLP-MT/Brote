@@ -6,6 +6,7 @@ This repo includes codes and examples for paper [Browse and Concentrate: Compreh
 
 ## Framework
 We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporating multimodal context before feeding features into the LLM, together with two approaches to implement our paradigm, Brote-EX and Brote-IM. The model structures are shown in the following figure.
+<img src="./figures/model.png" alt="Image" width="400">
 ![model](./figures/model.png)
 
 ## Installation
