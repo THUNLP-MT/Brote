@@ -13,6 +13,19 @@ We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporati
 coming soon
 
 ## Instructions For Training and Inference
+
+### Data
+Please refer to the data format described in [MIC](https://github.com/HaozheZhao/MIC).
+
+### Environment
+```
+pip install -r requirements.txt
+```
+
+### Training
+coming soon
+
+### Inference
 coming soon
 
 ## Example
