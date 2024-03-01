@@ -1,6 +1,6 @@
 # 👀 Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion
 
-[**📖 arXiv**](https://arxiv.org/pdf/2402.12195.pdf) | [**🤗 Models**](coming soon)
+[**🌐 Homepage**](https://stephenzhuyiqi.github.io/Brote/) | [**📖 arXiv**](https://arxiv.org/pdf/2402.12195.pdf) | [**🤗 Models**](coming soon)
 
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 
@@ -8,9 +8,6 @@ This repo includes codes and examples for paper [Browse and Concentrate: Compreh
 We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporating multimodal context before feeding features into the LLM, together with two approaches to implement our paradigm, Brote-EX and Brote-IM. The model structures are shown in the following figure.
 
 <img src="./figures/model.png" alt="Image" width="600">
-
-## Installation
-coming soon
 
 ## Instructions For Training and Inference
 
