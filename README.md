@@ -23,7 +23,9 @@ pip install -r requirements.txt
 coming soon
 
 ### Inference
-coming soon
+Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
+
+Instructions for the test script are coming soon. 
 
 ## Example
 <img src="./figures/git_showcase.png" alt="Image" width="600">
