@@ -18,7 +18,7 @@ BASE_TEXT_PATH = "../text"
 
 MAX_TOKEN = 1000
 
-DESTINATION_TEXT_PATH = "../data/ivqa_frame.jsonl"
+DESTINATION_TEXT_PATH = "The path to save result"
 
 
 def str2bool(v):
