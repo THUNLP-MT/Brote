@@ -1,0 +1,23 @@
+{
+    "input_text": "The image 0: <image0>\u56fe is the primary source of information for answering the questions. Please refer to it carefully when answering question: What\ufffd\ufffd\ufffds the address to the mailbox in the picture? Answer: 14\n\nPlease ensure that you are answering the question based on the information presented in the image 1: <image1>\u56fe.Question:Which number is used at the bottom of the place? Answer: 3\n\nQuestions is related to image 2: <image2>\u56fe. Please analyze the image and provide the correct answer for the question: What are ok? Bikes\n\nFor each question, use the image 3: <image3>\u56fe as a reference to answer the question: How many people are wearing glasses? 3\n\nPlease ensure that you are answering the question based on the information presented in the image 4: <image4>\u56fe.Question:How many machines are in the picture? Answer: One Machine\n\nPlease ensure that you are answering the question based on the information presented in the image 5: <image5>\u56fe.Question:What year is on this picture? Answer: 2009\n\nThe image 6: <image6>\u56fe is the primary source of information for answering the questions. Please refer to it carefully when answering question: What is the bus number? Answer:",
+    "output_text": "55",
+    "images": [
+        "../images/stvqa/imageNet/n03710193_17061.JPEG",
+        "../images/stvqa/coco-text/COCO_train2014_000000441116.jpg",
+        "../images/stvqa/VisualGenome/1/2355550.jpg",
+        "../images/stvqa/coco-text/COCO_train2014_000000354070.jpg",
+        "../images/stvqa/icdar/img_698.jpg",
+        "../images/stvqa/imageNet/n04033995_18935.JPEG",
+        "../images/stvqa/coco-text/COCO_train2014_000000324852.jpg"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "A mailbox displaying the number 14",
+        "image1": "A red train parked at a station showcasing the number 3 at the bottom",
+        "image2": "A bus driving down the road with a bike sign indicating that bikes are permitted",
+        "image3": "Three people wearing glasses sitting at a table with wine glasses",
+        "image4": "A room with a wooden floor featuring one machine",
+        "image5": "A blue and white quilt with a white trim and the year 2009 displayed",
+        "image6": "A London bus parked on a street with the number 55"
+    }
+}

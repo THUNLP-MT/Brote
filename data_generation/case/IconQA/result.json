@@ -1,0 +1,21 @@
+{
+    "input_text": "image 0 is <image0>\u56fe.\nGiven the options below, based on the photo image 0, select the most suitable answer for the following question: The first picture is a boat. Which picture is tenth?. Options: option 1: crab. option 2: bucket. option 3: boat. Answer: option 3: boat\n\nimage 1 is <image1>\u56fe.\nGiven the image 1, select the option that provides the most accurate and complete answer to the question from the available answer choices. Question: Does this shape have a circle as a face? Options: option 1: yes. option 2: no. Answer: option 1: yes\n\nimage 2 is <image2>\u56fe.\nBased on the <image2>, choose the option that provides the most accurate and complete answer to the question. Question: The first picture is a train. Which picture is third? Options: option 1: train. option 2: plane. option 3: bear. Answer: option 3: bear\n\nimage 3 is <image3>\u56fe.\nGiven the image 3, select the option that provides the most accurate and complete answer to the question from the available answer choices. Question: How many triangles are on the frame? Options: option 1: 5. option 2: 3. option 3: 4. option 4: 2. option 5: 1. Answer: option 1: 5\n\nimage 4 is <image4>\u56fe.\nGiven the image 4, select the option that provides the most accurate and complete answer to the question from the available answer choices. Question: What has been done to this letter? Options: option 1: turn. option 2: flip. option 3: slide. Answer: option 3: slide\n\nimage 5 is <image5>\u56fe.\nBased on the <image5>, choose the option that provides the most accurate and complete answer to the question. Question: What time does the clock show? Options: option 1: 12:00. option 2: 11:00. Answer:",
+    "output_text": "option 2: 11:00",
+    "images": [
+        "../images/iconqa/iconqa/train/choose_txt/8196/image.png",
+        "../images/iconqa/iconqa/train/choose_txt/26627/image.png",
+        "../images/iconqa/iconqa/train/choose_txt/24666/image.png",
+        "../images/iconqa/iconqa/train/choose_txt/24135/image.png",
+        "../images/iconqa/iconqa/train/choose_txt/93195/image.png",
+        "../images/iconqa/iconqa/train/choose_txt/16699/image.png"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "A logo with the words 'First' and an image of a red lobster, correlating to 'first' in a sequence where a 'boat' represents 'tenth'.",
+        "image1": "A green cone with a circular hole in the middle, confirming the presence of a circular face.",
+        "image2": "A logo featuring a train and a teddy bear, with the teddy bear representing the 'third' item in a sequence following the train.",
+        "image3": "A series of yellow triangles displayed in a row, with a total count of five triangles.",
+        "image4": "The image shows two green arrows pointing to the letter 'q', highlighting a transformation where the letter 'q' has been slid.",
+        "image5": "A clock displaying the time as 11:00."
+    }
+}

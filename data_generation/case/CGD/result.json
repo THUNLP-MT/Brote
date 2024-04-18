@@ -1,0 +1,13 @@
+{
+    "input_text": "How are the chairs different in the two images?",
+    "output_text": "In the first image, the chair is a high chair while in the second image, there are two different chairs, one on the left and one on the right.",
+    "images": [
+        "../images/CGD/CGD_IMG_000000338651.jpg",
+        "../images/CGD/CGD_IMG_000000473373.jpg"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "A baby is eating a cupcake in a high chair designed for infants and toddlers, allowing them to stay secure while eating.",
+        "image1": "A baby is eating cake in a setting with two different chairs, one to the left and another to the right, neither of which is a traditional high chair."
+    }
+}

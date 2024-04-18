@@ -1,0 +1,25 @@
+{
+    "input_text": "image 0 is <image0>\u56fe. \nimage 1 is <image1>\u56fe. \nimage 2 is <image2>\u56fe. \nimage 3 is <image3>\u56fe. \nimage 4 is <image4>\u56fe. \nimage 5 is <image5>\u56fe. \nimage 6 is <image6>\u56fe. \nimage 7 is <image7>\u56fe. \nPay close attention to the details in the images and provide accurate answers to the questions based on what you see. Qusetion: Where did the lady pour the mixture?. Answer:",
+    "output_text": "dish or dish or dish or dish or bowl",
+    "images": [
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image0.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image1.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image2.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image3.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image4.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image5.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image6.jpg",
+        "../images/ivqa/howto100mqa_nointersec_uniform_sampled/kjMOiOJ81Dg_142_154_image7.jpg"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "A white bowl filled with a liquid mixture",
+        "image1": "A stuffed animal being emptied into a white bowl",
+        "image2": "A person is stirring a white bowl filled with a food mixture",
+        "image3": "A person is adding food into a white bowl",
+        "image4": "A person mixing ingredients together in a white dish",
+        "image5": "A person scooping from a white dish containing food",
+        "image6": "A white dish being scooped into by a person",
+        "image7": "Food being poured by a person into a white dish"
+    }
+}

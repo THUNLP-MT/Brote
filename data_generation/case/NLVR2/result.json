@@ -1,0 +1,13 @@
+{
+    "input_text": "Right image shows a white dog sleeping on the floor with its belly facing up.",
+    "output_text": "True",
+    "images": [
+        "../images/nlvr2/train-2134-3-0.png",
+        "../images/nlvr2/train-2134-3-1.png"
+    ],
+    "model": "gpt-4-1106-preview",
+    "response": {
+        "image0": "A white puppy with its tongue out sitting on the ground",
+        "image1": "A white dog sleeping on the floor on its back with a bone in its mouth"
+    }
+}

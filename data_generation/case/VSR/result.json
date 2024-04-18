@@ -1,0 +1,15 @@
+{
+    "input_text": "image 0 is <image0>\u56fe. Caption is The boat is at the left side of the elephant. Determine whether the caption accurately describes the spatial relation between the two objects in the image 0. True or False? True\n\nimage 1 is <image1>\u56fe. Caption is The teddy bear is on top of the cake. Determine whether the caption accurately describes the spatial relation between the two objects in the image 1. True or False? True\n\nimage 2 is <image2>\u56fe. Caption is The apple is at the left side of the banana. Determine whether the caption accurately describes the spatial relation between the two objects in the image 2. True or False?",
+    "output_text": "True",
+    "images": [
+        "../images/vsr/img/000000548420.jpg",
+        "../images/vsr/img/000000234468.jpg",
+        "../images/vsr/img/000000389011.jpg"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "Two people are riding an elephant in the water, with a boat visible to the left side of the elephant.",
+        "image1": "A delicately decorated baby shower cake featuring a teddy bear on top, alongside a tea set.",
+        "image2": "A spread of various foods on a table, including an apple placed to the left side of the banana."
+    }
+}

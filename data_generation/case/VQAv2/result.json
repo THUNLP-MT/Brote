@@ -1,0 +1,21 @@
+{
+    "input_text": "Consider all of the information in image 0 labeled <image0>\u56fe when answering the question: How many people are not female? 7\n\nUse the image 1: <image1>\u56fe as a visual aid to help you answer the questions accurately. Question:What is printed on the couch? Answer: flowers\n\nAnswer each question based on the information presented in image 2: <image2>\u56fe. Given the picture <image2>, what is the answer to the question: What color shirt is the person wearing who is drinking a beverage? Answer: white\n\nQuestions is related to image 3: <image3>\u56fe. Please analyze the image and provide the correct answer for the question: How many people are in the boat? 0\n\nConsider all of the information in image 4 labeled <image4>\u56fe when answering the question: What is the plane doing? in air\n\nRead the question carefully and look at image 5 labeled <image5>\u56fe. Use your intuition and common sense when answering the question: Does any of the food have ketchup on it?",
+    "output_text": "no",
+    "images": [
+        "../images/coco/train2014/COCO_train2014_000000394565.jpg",
+        "../images/coco/train2014/COCO_train2014_000000401681.jpg",
+        "../images/coco/train2014/COCO_train2014_000000329386.jpg",
+        "../images/coco/val2014/COCO_val2014_000000113294.jpg",
+        "../images/coco/train2014/COCO_train2014_000000489297.jpg",
+        "../images/coco/val2014/COCO_val2014_000000136624.jpg"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "Seven men in business suits standing in a conference room",
+        "image1": "A dog and cat laying on a couch with a flower print",
+        "image2": "A man wearing a white shirt is sitting at a table with a plate of pizza",
+        "image3": "A man is standing on a rocky shore with an empty boat in the water",
+        "image4": "British Airways B787 is in the air after taking off at London",
+        "image5": "A plate of chicken and waffles with fries, without any ketchup"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "input_text": "image 0 is <image0>\u56fe.\nimage 1 is <image1>\u56fe.\nimage 2 is <image2>\u56fe.\nimage 3 is <image3>\u56fe.\n. Given the options below, based on the photo <image0>, select the most suitable answer for the following question: Is image 1  in management over image 2  ?. Options: option0 No , image 1  isn ' t working right now .\noption1 Yes , image 1  is in management over image 2  .\noption2 No , image 1  is image 2  ' s boss .\noption3 No , image 1  is not likely the captain of image 2  .",
+    "output_text": "option1 Yes , image 1  is in management over image 2  .",
+    "images": [
+        "../images/vcr/vcr1images/lsmdc_0051_Men_in_black/0051_Men_in_black_01.00.05.700-01.00.05.827@0.jpg",
+        "../images/vcr/vcr2images_slices/lsmdc_0051_Men_in_black/0051_Men_in_black_01.00.05.700-01.00.05.827@0_0.jpg",
+        "../images/vcr/vcr2images_slices/lsmdc_0051_Men_in_black/0051_Men_in_black_01.00.05.700-01.00.05.827@0_1.jpg",
+        "../images/vcr/vcr2images_slices/lsmdc_0051_Men_in_black/0051_Men_in_black_01.00.05.700-01.00.05.827@0_2.jpg"
+    ],
+    "model": "gpt-4-1106-preview",
+    "gpt_caption": {
+        "image0": "A focused businessman analyzing data on a computer screen",
+        "image1": "A corporate manager seated at a table, demonstrating authority",
+        "image2": "A cheerful employee smiling, subordinate to the manager in the previous image",
+        "image3": "A classic black tie paired with a crisp white shirt"
+    }
+}
