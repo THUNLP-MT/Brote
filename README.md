@@ -1,6 +1,6 @@
 # 👀 Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion
 
-[**🌐 Homepage**](https://stephenzhuyiqi.github.io/Brote/) | [**📖 arXiv**](https://arxiv.org/pdf/2402.12195.pdf) | [**🤗 Models**](https://huggingface.co/wangphoebe/Brote-IM-XXL)
+[**🌐 Homepage**](https://thunlp-mt.github.io/Brote/) | [**📖 arXiv**](https://arxiv.org/pdf/2402.12195.pdf) | [**🤗 Models**](https://huggingface.co/wangphoebe/Brote-IM-XXL)
 
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
