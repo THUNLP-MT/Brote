@@ -47,7 +47,7 @@ To run the test script (ensure the required libraries are properly installed):
 ```
 export CUDAID='please set you cuda id here'
 export TASKID='please set the case id (from 1 to 5), or use the string 'all'(lowercase)'
-CUDA_VISIBLE_DEVICES=CUDAIDpython test.py TASKID 
+CUDA_VISIBLE_DEVICES=CUDAID python test.py TASKID 
 ```
 
 ## Example
