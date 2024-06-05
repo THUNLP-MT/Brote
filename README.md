@@ -71,5 +71,5 @@ year={2024},
 url={https://openreview.net/forum?id=K1Wf0vKps3}
 }
 ```
-# Acknowledgement
+## Acknowledgement
 Our models are build upon [MMICL](https://github.com/HaozheZhao/MIC) and [InstructBLIP](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip).
