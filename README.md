@@ -63,12 +63,11 @@ Please download our model from [**🤗 Models**](https://huggingface.co/wangphoe
 📑 If you find our project helpful to your research, please consider citing:
 ```
 @inproceedings{
-anonymous2024browse,
+wang2024browse,
 title={Browse and Concentrate: Comprehending Multimodal Content via Prior-{LLM} Context Fusion},
-author={Anonymous},
+author={Wang, Ziyue and Chen, Chi and Zhu, Yiqi and Luo, Fuwen and Li, Peng and Yan, Ming and Zhang, Ji and Huang, Fei and Sun, Maosong and Liu, Yang},
 booktitle={The 62nd Annual Meeting of the Association for Computational Linguistics},
 year={2024},
-url={https://openreview.net/forum?id=K1Wf0vKps3}
 }
 ```
 ## Acknowledgement
