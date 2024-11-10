@@ -38,7 +38,8 @@ pip install -r requirements.txt
 ```
 
 ### Training
-coming soon
+~~coming soon~~
+(Please raise issues regarding the training scripts, or reach out at [this email](mailto:w.ziyue1010@gmail.com).
 
 ### Inference
 Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
