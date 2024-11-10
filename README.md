@@ -1,4 +1,4 @@
-# 👀 Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion
+# 👀 Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion (ACL '24 Oral)
 
 [**🌐 Homepage**](https://thunlp-mt.github.io/Brote/) | [**📖 arXiv**](https://arxiv.org/pdf/2402.12195.pdf) | [**🤗 Models**](https://huggingface.co/wangphoebe/Brote-IM-XXL)
 
