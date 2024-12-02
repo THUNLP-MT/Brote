@@ -17,10 +17,10 @@ We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporati
 
 ## Instructions For Training and Inference
 
-### Data
+### 1. Data
 Please refer to the data format described in [MIC](https://github.com/HaozheZhao/MIC).
 
-#### 1. Data for pretraining.
+#### 1.1 Data for pretraining.
 
 We create a dataset of 56k fewshot data samples, resulting in 191k training instances (one image per instance). These instances are supposed to contain question-aware and cross-image information. The data construction pipeline is illustrated in the following figure.
 
@@ -30,16 +30,16 @@ We create a dataset of 56k fewshot data samples, resulting in 191k training inst
 
 The pretraining data will be available by the end of this week (08 Dec).
 
-#### 2. Data for finetuning.
+#### 1.2 Data for finetuning.
 
 We sampled about 500k data from MIC for model finetuning.
 
-### Environment
+### 2. Environment
 ```
 pip install -r requirements.txt
 ```
 
-### Training
+### 3. Training
 ~~coming soon~~
 
 ~~(Please raise issues regarding the training scripts, or reach out at [this email](mailto:w.ziyue1010@gmail.com).~~
@@ -47,7 +47,7 @@ pip install -r requirements.txt
 The training scripts will be available by the end of this week (08 Dec).
 
 
-### Inference
+### 4. Inference
 Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
 
 To run the test script (ensure the required libraries are properly installed):
