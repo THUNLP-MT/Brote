@@ -20,16 +20,17 @@ We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporati
 ### Data
 Please refer to the data format described in [MIC](https://github.com/HaozheZhao/MIC).
 
-1. Data for pretraining.
+#### 1. Data for pretraining.
 
 We create a dataset of 56k fewshot data samples, resulting in 191k training instances (one image per instance). These instances are supposed to contain question-aware and cross-image information. The data construction pipeline is illustrated in the following figure.
 
 <img src="./figures/pretrain_data.png" alt="Image" width="400">
 
 ~~If you want plan to try our constructed pretraining data, please create an issue here. We will contact you ASAP.~~
+
 The pretraining data will be available by the end of this week (08 Dec).
 
-2. Data for finetuning.
+#### 2. Data for finetuning.
 
 We sampled about 500k data from MIC for model finetuning.
 
