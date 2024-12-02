@@ -5,7 +5,7 @@
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
 
-1. [2024-05-16] This paper is accepted by ACL 2024 (main conference). Information for our training data is updated.
+1. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
 2. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
 3. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
 4. [2024-02-26] Project released.
@@ -26,7 +26,8 @@ We create a dataset of 56k fewshot data samples, resulting in 191k training inst
 
 <img src="./figures/pretrain_data.png" alt="Image" width="400">
 
-If you want plan to try our constructed pretraining data, please create an issue here. We will contact you ASAP.  
+~~If you want plan to try our constructed pretraining data, please create an issue here. We will contact you ASAP.~~
+The pretraining data will be available by the end of this week (08 Dec).
 
 2. Data for finetuning.
 
@@ -40,6 +41,8 @@ pip install -r requirements.txt
 ### Training
 ~~coming soon~~
 (Please raise issues regarding the training scripts, or reach out at [this email](mailto:w.ziyue1010@gmail.com).
+The training scripts will be available by the end of this week (08 Dec).
+
 
 ### Inference
 Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
