@@ -5,10 +5,11 @@
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
 
-1. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
-2. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
-3. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
-4. [2024-02-26] Project released.
+1. [2024-12-08] Pretraining data released.
+2. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
+3. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
+4. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
+5. [2024-02-26] Project released.
 
 ## Framework
 We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporating multimodal context before feeding features into the LLM, together with two approaches to implement our paradigm, Brote-EX and Brote-IM. The model structures are shown in the following figure.
@@ -22,13 +23,14 @@ Please refer to the data format described in [MIC](https://github.com/HaozheZhao
 
 #### 1.1 Data for pretraining.
 
-We create a dataset of 56k fewshot data samples, resulting in 191k training instances (one image per instance). These instances are supposed to contain question-aware and cross-image information. The data construction pipeline is illustrated in the following figure.
+We create a dataset of 56k fewshot data samples (each data sample contains one or multiple images), resulting in 191k training instances (one image per instance). These instances are supposed to contain question-aware and cross-image information. The data construction pipeline is illustrated in the following figure.
+
+Please download our pretraining dataset from the ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files). 
+
+  - We are uploading the data recently (probably taking a few days).
+  - A Huggingface link to the data will be available soon.
 
 <img src="./figures/pretrain_data.png" alt="Image" width="400">
-
-~~If you want plan to try our constructed pretraining data, please create an issue here. We will contact you ASAP.~~
-
-The pretraining data will be available by the end of this week (08 Dec).
 
 #### 1.2 Data for finetuning.
 
@@ -44,7 +46,7 @@ pip install -r requirements.txt
 
 ~~(Please raise issues regarding the training scripts, or reach out at [this email](mailto:w.ziyue1010@gmail.com).~~
 
-The training scripts will be available by the end of this week (08 Dec).
+The training scripts will be available soon.
 
 
 ### 4. Inference
