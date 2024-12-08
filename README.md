@@ -27,10 +27,7 @@ We create a dataset of 56k fewshot data samples (each data sample contains one o
 
 <img src="./figures/pretrain_data.png" alt="Image" width="400">
 
-Please download our pretraining dataset from the ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files). 
-
-  - We are uploading the data recently (probably taking a few days).
-  - A Huggingface link to the data will be available soon.
+Please download our pretraining dataset from the ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files), or HuggingFace [link](https://huggingface.co/datasets/wangphoebe/Brote-pretrain).
 
 #### 1.2 Data for finetuning.
 
