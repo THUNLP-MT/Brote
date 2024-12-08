@@ -25,12 +25,12 @@ Please refer to the data format described in [MIC](https://github.com/HaozheZhao
 
 We create a dataset of 56k fewshot data samples (each data sample contains one or multiple images), resulting in 191k training instances (one image per instance). These instances are supposed to contain question-aware and cross-image information. The data construction pipeline is illustrated in the following figure.
 
+<img src="./figures/pretrain_data.png" alt="Image" width="400">
+
 Please download our pretraining dataset from the ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files). 
 
   - We are uploading the data recently (probably taking a few days).
   - A Huggingface link to the data will be available soon.
-
-<img src="./figures/pretrain_data.png" alt="Image" width="400">
 
 #### 1.2 Data for finetuning.
 
