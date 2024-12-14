@@ -5,11 +5,12 @@
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
 
-1. [2024-12-08] Pretraining data released.
-2. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
-3. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
-4. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
-5. [2024-02-26] Project released.
+1. [2024-12-14] Release the training instructions. The full training scripts will be available soon.
+2. [2024-12-08] Pretraining data released.
+3. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
+4. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
+5. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
+6. [2024-02-26] Project released.
 
 ## Framework
 We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporating multimodal context before feeding features into the LLM, together with two approaches to implement our paradigm, Brote-EX and Brote-IM. The model structures are shown in the following figure.
