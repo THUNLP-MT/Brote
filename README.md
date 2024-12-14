@@ -43,8 +43,28 @@ pip install -r requirements.txt
 
 ~~(Please raise issues regarding the training scripts, or reach out at [this email](mailto:w.ziyue1010@gmail.com).~~
 
-The training scripts will be available soon.
+The full training scripts will be available soon.
 
+⚠️ Please follow the instructions for training:
+
+#### 3.1. Pretraining 
+  - Preparing for training data
+     - **Download** the pretraining data from ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files), or HuggingFace [link].
+     - **Generate and save** condition contexts using the original InstructBlip or MMICL models.
+       - We used encoder_last_hidden_state\[eos_token_index\] in our paper. You can also explore representations from othe layers or positions.
+       - The input data of this generate process comes from the 'input_text' and 'input_image' fields in the pretraining dataset.
+  - Unfreeze the **parameters for query token and Q-Former** (the others remain frozen), and conduct training targeting at the '**gpt_caption**' field in the pretraining dataset.
+
+#### 3.2. Finetuning 
+  - Brote-EX
+    - Download the MIC dataset.
+    - Generate and save condition contexts using the original InstructBlip or MMICL models. Note that this refers to the condition contexts of MIC dataset following our data dropping strategies (discussed in section 3.4 in out paper), which is different from the pretrainig data.
+    - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
+
+  - Brote-IM
+    - Download the MIC dataset.
+    - No need to generate condition contexts. You can directly fineutne from the pretrained model following the above instruction, or continue fineutning from Brote-EX (this works better).
+    - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
 
 ### 4. Inference
 Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
