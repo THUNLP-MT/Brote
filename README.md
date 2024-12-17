@@ -5,12 +5,13 @@
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
 
-1. [2024-12-14] Release the training instructions. The full training scripts will be available soon.
-2. [2024-12-08] Pretraining data released.
-3. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
-4. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
-5. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
-6. [2024-02-26] Project released.
+1. [2024-12-17] Update condition context generation scripts.
+2. [2024-12-14] Release the training instructions. The full training scripts will be available soon.
+3. [2024-12-08] Pretraining data released.
+4. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
+5. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
+6. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
+7. [2024-02-26] Project released.
 
 ## Framework
 We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporating multimodal context before feeding features into the LLM, together with two approaches to implement our paradigm, Brote-EX and Brote-IM. The model structures are shown in the following figure.
@@ -40,9 +41,6 @@ pip install -r requirements.txt
 ```
 
 ### 3. Training
-~~coming soon~~
-
-~~(Please raise issues regarding the training scripts, or reach out at [this email](mailto:w.ziyue1010@gmail.com).~~
 
 The full training scripts will be available soon.
 
@@ -54,6 +52,10 @@ The full training scripts will be available soon.
      - **Generate and save** condition contexts using the original InstructBlip or MMICL models.
        - We used encoder_last_hidden_state\[eos_token_index\] in our paper. You can also explore representations from othe layers or positions.
        - The input data of this generate process comes from the 'input_text' and 'input_image' fields in the pretraining dataset.
+       - Please modify the required fields in run_script/gen_condition/get_conditions_gpt.sh. Here is an example of using the script:
+         ```
+         bash run_script/gen_condition/get_conditions_gpt.sh 0 stage1_gpt_v0.parquet.gzip stage1_gpt_v0_condion.parquet.gzip
+         ```
   - Unfreeze the **parameters for query token and Q-Former** (the others remain frozen), and conduct training targeting at the '**gpt_caption**' field in the pretraining dataset.
 
 #### 3.2. Finetuning 
