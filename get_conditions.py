@@ -11,7 +11,7 @@ import numpy as np
 import torch
 from torch.nn.functional import pad
 from torch.utils.data import DataLoader
-from model.instructblip import InstructBlipConfig, InstructBlipModel, InstructBlipPreTrainedModel,InstructBlipForConditionalGeneration,InstructBlipProcessor
+from model.instructblip import InstructBlipConfig, InstructBlipForConditionalGeneration, InstructBlipProcessor
 
 from PIL import Image
 
@@ -59,8 +59,11 @@ class ConditionGenerator:
                 img = Image.open(img_path)
                 result["pixel_values"].append(self.processor(images = img)["pixel_values"][0])
         else:
-            for basrr64_img in examples["input_image"]:
-                img = load_base64_image(basrr64_img)
+            for img in examples["input_image"]:
+                if os.path.isfile(img):
+                    img = Image.open(img)
+                else:
+                    img = load_base64_image(img)
                 result["pixel_values"].append(self.processor(images = img)["pixel_values"][0])
     
         return result    
