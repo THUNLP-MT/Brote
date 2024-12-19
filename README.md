@@ -54,7 +54,7 @@ The full training scripts will be available soon.
        - The input data of this generate process comes from the 'input_text' and 'input_image' fields in the pretraining dataset.
        - Please modify the required fields in run_script/gen_condition/get_conditions_gpt.sh. Here is an example of using the script:
          ```
-         bash run_script/gen_condition/get_conditions_gpt.sh 0 stage1_gpt_v0.parquet.gzip stage1_gpt_v0_condion.parquet.gzip
+         bash run_script/gen_condition/get_conditions_gpt.sh 0 stage1_gpt_v0.parquet.gzip ./pretrain_data stage1_gpt_v0_condion.parquet.gzip
          ```
   - Unfreeze the **parameters for query token and Q-Former** (the others remain frozen), and conduct training targeting at the '**gpt_caption**' field in the pretraining dataset.
 
