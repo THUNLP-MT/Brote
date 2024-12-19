@@ -48,7 +48,7 @@ The full training scripts will be available soon.
 
 #### 3.1. Pretraining 
   - Preparing for training data
-     - **Download** the pretraining data from ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files), or HuggingFace [link].
+     - **Download** the pretraining data from ModelScope [link](https://www.modelscope.cn/datasets/wphoebe/Brote-pretrain/files), or HuggingFace [link](https://huggingface.co/datasets/wangphoebe/Brote-pretrain).
      - **Generate and save** condition contexts using the original InstructBlip or MMICL models.
        - We used encoder_last_hidden_state\[eos_token_index\] in our paper. You can also explore representations from othe layers or positions.
        - The input data of this generate process comes from the 'input_text' and 'input_image' fields in the pretraining dataset.
