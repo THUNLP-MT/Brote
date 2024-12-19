@@ -139,7 +139,6 @@ def get_conditions(cond_gen, args):
     with torch.no_grad():
         for inputs in tqdm(dataloader):
             i+=1
-            inputs = batch
             try:
                 outputs = model.generate(
                     pixel_values = inputs['pixel_values'].to('cuda'),
