@@ -140,7 +140,7 @@ def get_conditions(cond_gen, args):
         for inputs in tqdm(dataloader):
             i+=1
             try:
-                outputs = model.generate(
+                outputs = cond_gen.model.generate(
                     pixel_values = inputs['pixel_values'].to('cuda'),
                     input_ids = inputs['input_ids'].to('cuda'),
                     attention_mask = inputs['attention_mask'].to('cuda'),
