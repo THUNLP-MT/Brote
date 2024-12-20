@@ -5,13 +5,14 @@
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
 
-1. [2024-12-17] Update condition context generation scripts.
-2. [2024-12-14] Release the training instructions. The full training scripts will be available soon.
-3. [2024-12-08] Pretraining data released.
-4. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
-5. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
-6. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
-7. [2024-02-26] Project released.
+1. [2024-12-20] Training scripts for Brote-EX released.
+2. [2024-12-17] Update condition context generation scripts.
+3. [2024-12-14] Release the training instructions. The full training scripts will be available soon.
+4. [2024-12-08] Pretraining data released. (These data are updated on 20 Dec 2024, please use the newst version.)
+5. [2024-05-16] This paper is accepted by ACL 2024 (main conference, oral). Information for our training data is updated.
+6. [2024-04-18] Code and cases for data generation released. The generated data are used for pretraining.
+7. [2024-03-18] Brote-IM-XXL model released, please download from this [link](https://huggingface.co/wangphoebe/Brote-IM-XXL). 
+8. [2024-02-26] Project released.
 
 ## Framework
 We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporating multimodal context before feeding features into the LLM, together with two approaches to implement our paradigm, Brote-EX and Brote-IM. The model structures are shown in the following figure.
@@ -63,6 +64,10 @@ The full training scripts will be available soon.
     - Download the MIC dataset.
     - Generate and save condition contexts using the original InstructBlip or MMICL models. Note that this refers to the condition contexts of MIC dataset following our data dropping strategies (discussed in section 3.4 in out paper), which is different from the pretrainig data.
     - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
+    - Command to run:
+    ```
+    bash run_script/pretrain/train_stage1.sh
+    ```
 
   - Brote-IM
     - Download the MIC dataset.
