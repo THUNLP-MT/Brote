@@ -5,7 +5,7 @@
 This repo includes codes and examples for paper [Browse and Concentrate: Comprehending Multimodal Content via prior-LLM Context Fusion](https://arxiv.org/pdf/2402.12195.pdf). 
 ## Activities
 
-1. [2024-12-20] Training scripts for Brote-EX released.
+1. [2024-12-20] Pre-training scripts released.
 2. [2024-12-17] Update condition context generation scripts.
 3. [2024-12-14] Release the training instructions. The full training scripts will be available soon.
 4. [2024-12-08] Pretraining data released. (These data are updated on 20 Dec 2024, please use the newst version.)
@@ -59,15 +59,16 @@ The full training scripts will be available soon.
          ```
   - Unfreeze the **parameters for query token and Q-Former** (the others remain frozen), and conduct training targeting at the '**gpt_caption**' field in the pretraining dataset.
 
+  - Command to run:
+    ```
+    bash run_script/pretrain/train_stage1.sh
+    ```
+
 #### 3.2. Finetuning 
   - Brote-EX
     - Download the MIC dataset.
     - Generate and save condition contexts using the original InstructBlip or MMICL models. Note that this refers to the condition contexts of MIC dataset following our data dropping strategies (discussed in section 3.4 in out paper), which is different from the pretrainig data.
     - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
-    - Command to run:
-    ```
-    bash run_script/pretrain/train_stage1.sh
-    ```
 
   - Brote-IM
     - Download the MIC dataset.
