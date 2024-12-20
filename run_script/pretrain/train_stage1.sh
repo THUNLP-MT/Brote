@@ -19,7 +19,7 @@ do_test=False
 do_valid=True
 master_port=29505
 
-/yeesuanAI05/thumt/wzy/envs/mmicl/bin/deepspeed --master_port $master_port --include localhost:0,1,2,3 run_prepared.py \
+deepspeed --master_port $master_port --include localhost:0,1,2,3 run_prepared.py \
     --full_bf16_training True \
     --learning_rate ${lr} \
     --lr_scheduler_type cosine \
