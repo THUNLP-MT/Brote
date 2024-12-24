@@ -108,9 +108,8 @@ class BroteDataset():
             if not self.data_args.train_file.endswith('condition.parquet.gzip'):
                 continue
             path = os.path.join(self.data_args.train_file, f_name)
-            try:
-                parquet_file = pq.ParquetFile(path)
-                df = pd.concat([item.to_pandas() for item in parquet_file.iter_batches(batch_size=600)]).reset_index(drop=True)
+            parquet_file = pq.ParquetFile(path)
+            df = pd.concat([item.to_pandas() for item in parquet_file.iter_batches(batch_size=600)]).reset_index(drop=True)
 
             ori_dataset = df['ori_dataset'][0] 
             dataset_len[ori_dataset] = len(df)
