@@ -67,7 +67,7 @@ The full training scripts will be available soon.
 #### 3.2. Finetuning 
   - Brote-EX
     - Download the MIC dataset.
-    - Generate and save condition contexts using the original InstructBlip or MMICL models. Note that this refers to the condition contexts of MIC dataset following our data dropping strategies (discussed in section 3.4 in out paper), which is different from the pretrainig data.
+    - Generate and save condition contexts using the original InstructBlip or MMICL models. Note that this refers to the condition contexts of MIC dataset following our data dropping strategies (discussed in section 3.4 in our paper), which is different from the pretrainig data.
     - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
 
   - Brote-IM
