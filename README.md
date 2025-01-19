@@ -21,6 +21,8 @@ We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporati
 
 ## Instructions For Training and Inference
 
+(Please jump to the [inference section](#Inference) for quick start)
+
 ### 1. Data
 Please refer to the data format described in [MIC](https://github.com/HaozheZhao/MIC).
 
@@ -75,7 +77,7 @@ The full training scripts will be available soon.
     - No need to generate condition contexts. You can directly fineutne from the pretrained model following the above instruction, or continue fineutning from Brote-EX (this works better).
     - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
 
-### 4. Inference
+### <a id="Inference"> 4. Inference </a>
 Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
 
 To run the test script (ensure the required libraries are properly installed):
