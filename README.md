@@ -21,7 +21,7 @@ We propose a paradigm **Bro**wse and Concentra**te** (**Brote**) for incorporati
 
 ## Instructions For Training and Inference
 
-(Please jump to the [inference section](#Inference) for quick start)
+(Please jump to the [inference section](#Inference) if you want to use our model for inference only.)
 
 ### 1. Data
 Please refer to the data format described in [MIC](https://github.com/HaozheZhao/MIC).
@@ -78,7 +78,6 @@ The full training scripts will be available soon.
     - Unfreeze the **parameters for query token, Q-Former, and query & values** of attention layers of the LLM.
 
 ### <a id="Inference"> 4. Inference </a>
-Please refer to the test.py file; files under the **model** dir are for test only, and will be updated soon for training.
 
 To run the test script (ensure the required libraries are properly installed):
 ```
@@ -86,6 +85,7 @@ export CUDAID='please set you cuda id here'
 export TASKID='please set the case id (from 1 to 5), or use the string 'all'(lowercase)'
 CUDA_VISIBLE_DEVICES=$CUDAID python test.py $TASKID 
 ```
+Please note that the input data format matters. If you cannot obtain similar results as mentioned in our paper, please try to modify the instruction template, especially for those aligning image tokens to the image representation. 
 
 ## Example
 <img src="./figures/git_showcase.png" alt="Image" width="600">
